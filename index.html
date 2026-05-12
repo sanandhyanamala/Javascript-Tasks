@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>`
+  <title>JavaScript 40 Questions</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f4f4f4;
+      padding:20px;
+      line-height:1.8;
+    }
+
+    h1{
+      text-align:center;
+      color:#222;
+    }
+
+    h2{
+      background:#222;
+      color:white;
+      padding:10px;
+      border-radius:5px;
+    }
+
+    .box{
+      background:white;
+      padding:15px;
+      margin-bottom:20px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    pre{
+      background:#eee;
+      padding:10px;
+      overflow:auto;
+      border-radius:5px;
+    }
+
+    .output{
+      color:green;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>JavaScript 40 Questions & Answers</h1>
+
+<!-- SECTION 1 -->
+<h2>Section 1: Variables (1–8)</h2>
+
+<div class="box">
+<pre>
+var a = 10;
+a = 15;
+console.log(a);
+</pre>
+<div class="output">Output: 15</div>
+</div>
+
+<div class="box">
+<pre>
+let x = 20;
+console.log(x);
+</pre>
+<div class="output">Output: 20</div>
+</div>
+
+<div class="box">
+<pre>
+const pi = 3.14;
+console.log(pi);
+</pre>
+<div class="output">Output: 3.14</div>
+</div>
+
+<div class="box">
+<pre>
+var name = "Charan";
+console.log(name);
+</pre>
+<div class="output">Output: Charan</div>
+</div>
+
+<div class="box">
+<pre>
+let num;
+console.log(num);
+</pre>
+<div class="output">Output: undefined</div>
+</div>
+
+<div class="box">
+<pre>
+var a = 5;
+var b = 10;
+console.log(a + b);
+</pre>
+<div class="output">Output: 15</div>
+</div>
+
+<div class="box">
+<pre>
+let age = 21;
+age = 22;
+console.log(age);
+</pre>
+<div class="output">Output: 22</div>
+</div>
+
+<div class="box">
+<pre>
+const country = "India";
+console.log(country);
+</pre>
+<div class="output">Output: India</div>
+</div>
+
+<!-- SECTION 2 -->
+<h2>Section 2: Data Types (9–14)</h2>
+
+<div class="box">
+<pre>
+console.log(typeof "Hello");
+</pre>
+<div class="output">Output: string</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(typeof 100);
+</pre>
+<div class="output">Output: number</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(typeof true);
+</pre>
+<div class="output">Output: boolean</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(typeof undefined);
+</pre>
+<div class="output">Output: undefined</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(typeof null);
+</pre>
+<div class="output">Output: object</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(typeof {});
+</pre>
+<div class="output">Output: object</div>
+</div>
+
+<!-- SECTION 3 -->
+<h2>Section 3: Arrays (15–20)</h2>
+
+<div class="box">
+<pre>
+let arr = [1,2,3];
+console.log(arr[0]);
+</pre>
+<div class="output">Output: 1</div>
+</div>
+
+<div class="box">
+<pre>
+let colors = ["red","blue","green"];
+console.log(colors[2]);
+</pre>
+<div class="output">Output: green</div>
+</div>
+
+<div class="box">
+<pre>
+let nums = [10,20,30];
+console.log(nums.length);
+</pre>
+<div class="output">Output: 3</div>
+</div>
+
+<div class="box">
+<pre>
+let fruits = ["apple","banana"];
+fruits.push("mango");
+console.log(fruits);
+</pre>
+<div class="output">Output: ["apple","banana","mango"]</div>
+</div>
+
+<div class="box">
+<pre>
+let data = [5,10,15];
+data.pop();
+console.log(data);
+</pre>
+<div class="output">Output: [5,10]</div>
+</div>
+
+<div class="box">
+<pre>
+let arr = ["a","b","c"];
+console.log(arr[arr.length - 1]);
+</pre>
+<div class="output">Output: c</div>
+</div>
+
+<!-- SECTION 4 -->
+<h2>Section 4: Objects (21–28)</h2>
+
+<div class="box">
+<pre>
+let obj = {
+  name: "Charan"
+};
+console.log(obj.name);
+</pre>
+<div class="output">Output: Charan</div>
+</div>
+
+<div class="box">
+<pre>
+let person = {
+  age: 21
+};
+console.log(person["age"]);
+</pre>
+<div class="output">Output: 21</div>
+</div>
+
+<div class="box">
+<pre>
+let car = {
+  brand: "BMW"
+};
+car.brand = "Audi";
+console.log(car.brand);
+</pre>
+<div class="output">Output: Audi</div>
+</div>
+
+<div class="box">
+<pre>
+let student = {
+  name: "Ram",
+  marks: 90
+};
+console.log(student.marks);
+</pre>
+<div class="output">Output: 90</div>
+</div>
+
+<div class="box">
+<pre>
+let obj = {
+  a: 1,
+  b: 2
+};
+console.log(Object.keys(obj));
+</pre>
+<div class="output">Output: ["a","b"]</div>
+</div>
+
+<div class="box">
+<pre>
+let user = {
+  city: "Bangalore"
+};
+console.log(user.city);
+</pre>
+<div class="output">Output: Bangalore</div>
+</div>
+
+<div class="box">
+<pre>
+let obj = {
+  fruits: ["apple","banana"]
+};
+console.log(obj.fruits[1]);
+</pre>
+<div class="output">Output: banana</div>
+</div>
+
+<div class="box">
+<pre>
+let obj = {
+  fruits: ["apple","banana"]
+};
+
+console.log(obj.fruits[obj.fruits.length - 1]);
+</pre>
+<div class="output">Output: banana</div>
+</div>
+
+<!-- SECTION 5 -->
+<h2>Section 5: Arithmetic Operators (29–32)</h2>
+
+<div class="box">
+<pre>
+console.log(5 + 3);
+</pre>
+<div class="output">Output: 8</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(10 % 3);
+</pre>
+<div class="output">Output: 1</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(2 ** 3);
+</pre>
+<div class="output">Output: 8</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(10 / 2);
+</pre>
+<div class="output">Output: 5</div>
+</div>
+
+<!-- SECTION 6 -->
+<h2>Section 6: Increment / Decrement (33–36)</h2>
+
+<div class="box">
+<pre>
+let a = 5;
+a++;
+console.log(a);
+</pre>
+<div class="output">Output: 6</div>
+</div>
+
+<div class="box">
+<pre>
+let b = 5;
+let c = b++;
+console.log(b, c);
+</pre>
+<div class="output">Output: 6 5</div>
+</div>
+
+<div class="box">
+<pre>
+let x = 5;
+let y = ++x;
+console.log(x, y);
+</pre>
+<div class="output">Output: 6 6</div>
+</div>
+
+<div class="box">
+<pre>
+let m = 3;
+let n = m--;
+console.log(m, n);
+</pre>
+<div class="output">Output: 2 3</div>
+</div>
+
+<!-- SECTION 7 -->
+<h2>Section 7: Comparison & Logical (37–39)</h2>
+
+<div class="box">
+<pre>
+console.log(5 == "5");
+</pre>
+<div class="output">Output: true</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(5 === "5");
+</pre>
+<div class="output">Output: false</div>
+</div>
+
+<div class="box">
+<pre>
+console.log(true && false || true);
+</pre>
+<div class="output">Output: true</div>
+</div>
+
+<!-- SECTION 8 -->
+<h2>Section 8: Ternary Operator (40)</h2>
+
+<div class="box">
+<pre>
+5 > 3 ? console.log("Yes") : console.log("No");
+</pre>
+<div class="output">Output: Yes</div>
+</div>
+
+</body>
+</html>
